@@ -5,6 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
   <title>test-task</title>
 </head>
 
@@ -21,28 +29,141 @@
     </div>
   </header>
   <main>
-    <div class="container">
+    <div class="container wrapper">
       <div class="products-slider">
         <div class="preview-lg">
           <img src="assets/Conveyor 3d-Temp0025.png" alt="">
         </div>
       </div>
 
-      <div class="product-info">
-        <div class="product-title">
+      <div class="product-details">
+        <div class="product-details-title">
           Incline & Decline Conveyors
         </div>
-        <div class="product-params">
-          <div class="product-width">
-            <button>10”</button>
-            <button>18”</button>
-            <button>24”</button>
-            <button>30”</button>
-            <button>36”</button>
-            <button>42”</button>
-            <button>48”</button>
-            <button>54”</button>
-            <button>Custom</button>
+        <div class="product-wrapper">
+          <div class="product-content">
+            <div class="product-width">
+              <div class="product-title">
+                Conveyor Belt Width, in
+                <button class="btn-info"></button>
+              </div>
+              <div class="options-group">
+                <button class="btn-option btn-option-active">10”</button>
+                <button class="btn-option">18”</button>
+                <button class="btn-option">24”</button>
+                <button class="btn-option">30”</button>
+                <button class="btn-option">36”</button>
+                <button class="btn-option">42”</button>
+                <button class="btn-option">48”</button>
+                <button class="btn-option">54”</button>
+                <button class="btn-option custom btn-option-active">Custom</button>
+                <div class="custom-size" id="product-width">
+                  <button class="btn-custom-size prev">
+                    <img src="assets/icons/Chevron_left.svg" alt="arrow left">
+                  </button>
+                  <span class="custom-size-value">10”</span>
+                  <button class="btn-custom-size next rotate">
+                    <img src="assets/icons/Chevron_left.svg" alt="arrow right">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-length">
+              <div class="product-title">
+                Bed Section Length, in
+                <button class="btn-info"></button>
+              </div>
+              <div class="custom-size" id="product-width">
+                <button class="btn-custom-size prev">
+                  <img src="assets/icons/Chevron_left.svg" alt="arrow left">
+                </button>
+                <span class="custom-size-value">10”</span>
+                <button class="btn-custom-size next">
+                  <img src="assets/icons/Chevron_left.svg" alt="arrow right">
+                </button>
+              </div>
+            </div>
+            <div class="product-options-group">
+              <div class="product-option-item">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" name="feeder">
+                  <label for="">Chain Driven Feeder</label>
+                </div>
+                <button class="btn-info"></button>
+              </div>
+              <div class="product-option-item">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" name>
+                  <label for="">Additional Support Structures</label>
+                </div>
+                <button class="btn-info"></button>
+              </div>
+              <div class="product-option-item">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox">
+                  <label for="">Knee Braces</label>
+                </div>
+                <button class="btn-info"></button>
+              </div>
+              <div class="product-option-item">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox"><label for="">Enhanced support
+                  </label>
+                </div>
+                <button class="btn-info"></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-info">
+            <div class="product-info-top">
+              <div class="procuct-info-code">
+                <span>SKU:</span> WMD-2446F-GRYI
+              </div>
+              <button class="btn-request"><img src="assets/icons/check.svg" alt="check">Upon request</button>
+              <div class="product-info-rate-block">
+                <div class="product-info-rate-group">
+                  <img src="assets/icons/star.svg" alt="rate">
+                  <img src="assets/icons/star.svg" alt="rate">
+                  <img src="assets/icons/star.svg" alt="rate">
+                  <img src="assets/icons/star.svg" alt="rate">
+                  <img src="assets/icons/star.svg" alt="rate">
+                  <span class="product-info-rate-comments">(20)</span>
+                </div>
+                <a href="">
+                  <button class="btn-read-more">
+                    <span>read</span>
+                    <img class="" src="assets/icons/arrow.svg" alt="arrow">
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="devider"></div>
+            <div class="product-info-bottom">
+              <div class="product-info-price">
+                <span>from</span> $22360 <span>ea</span>*
+              </div>
+              <div class="product-quantity">
+                <button class="minus disabled">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.5 8L0.5 8" stroke="white" stroke-linecap="round" />
+                  </svg>
+                </button>
+                <div class=" quantity">1</div>
+                <button class="plus">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 0.5L8 15.5M15.5 8L0.5 8" stroke="black" stroke-linecap="round" />
+                  </svg>
+                </button>
+              </div>
+              <button class="btn-quote">
+                <img src="assets/icons/flag.svg" alt="flag">
+                request
+              </button>
+              <div class="product-warning">
+                *Final price is defined after a consultation with our specialist due to actual conditions of use.
+              </div>
+            </div>
           </div>
         </div>
       </div>

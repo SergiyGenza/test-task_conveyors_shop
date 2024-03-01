@@ -1,0 +1,20 @@
+@font-face {
+  font-family: SF-pro-bold, sans-serif;
+  src: url("fonts/SF_Pro/SFProText-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: SF-pro-semibold, sans-serif;
+  src: url("fonts/SF_Pro/SFProText-Semibold.ttf") format("truetype");
+}
+@font-face {
+  font-family: SF-pro-bold-regular, sans-serif;
+  src: url("fonts/SF_Pro/SFProText-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: SF-pro-bold-light, sans-serif;
+  src: url("fonts/SF_Pro/SFProText-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat", sans-serif;
+}
