@@ -1,5 +1,5 @@
 @import "_reset.css";
-@import "fonts.css";
+@import "fonts/SF_Pro/stylesheet.css";
 
 :root {
   --azure: #e0ecf0;
@@ -18,7 +18,7 @@
 }
 
 body {
-  /* font-family: SF-pro-bold, sans-serif; */
+  font-family: "SF Pro Display";
 }
 
 .container {
@@ -36,10 +36,22 @@ nav ul {
   font-size: 20px;
 }
 nav ul li {
+  font-size: 12px;
+  font-weight: 400;
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 12px;
+
+  color: var(--black-primary);
+  text-transform: uppercase;
+}
+
+nav ul li:nth-child(2) {
+  color: var(--gray-600);
+}
+
+nav ul li:last-child {
+  color: var(--gray-300);
 }
 
 nav ul li::after {
@@ -59,6 +71,8 @@ nav ul li:last-child::after {
 
 .wrapper {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 44px;
 }
 
@@ -70,6 +84,7 @@ nav ul li:last-child::after {
 /* //////////////////// */
 
 .product-details {
+  margin-bottom: 500px;
 }
 .product-details-title {
   font-family: "Montserrat", sans-serif;
@@ -92,12 +107,12 @@ nav ul li:last-child::after {
   margin-bottom: 32px;
 }
 .product-title {
-  font-family: SF-pro-semibold, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
   display: flex;
   gap: 8px;
-  font-size: 14px;
-  font-weight: 700;
-  margin-bottom: 11px;
+  margin-bottom: 8px;
+  color: var(--gray-900);
 }
 
 .btn-info {
@@ -113,19 +128,20 @@ nav ul li:last-child::after {
 }
 
 .btn-option {
-  font-family: SF-pro-bold, sans-serif;
   background-color: var(--azure-150);
   border-radius: 4px;
   color: var(--gray-900);
-  font-weight: 800;
+  font-weight: 700;
   font-size: 14px;
-  padding: 11px 9.5px 11px 13.5px;
   max-width: 48px;
+  height: 32px;
+  width: 48px;
 }
 
 .btn-option.custom {
   padding: 11px 22px;
   min-width: 108px;
+  text-transform: uppercase;
 }
 
 .btn-option-active {
@@ -155,9 +171,8 @@ nav ul li:last-child::after {
   height: 20px;
 }
 .custom-size-value {
-  font-family: SF-pro-regular, sans-serif;
   background-color: var(--gray-50);
-  padding: 14px 22px;
+  padding: 13px 22px;
   font-size: 14px;
   border-radius: 8px;
   border: var(--gray-200) 1px solid;
@@ -180,18 +195,19 @@ nav ul li:last-child::after {
 .product-options-group {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
 }
 
 .product-option-item {
   display: flex;
   justify-content: space-between;
-  font-family: SF-pro-bold, sans-serif;
   font-size: 14px;
   padding: 12px;
   border-radius: 8px;
   background-color: var(--azure-150);
   color: var(--gray-900);
+  font-weight: 600;
+  height: 44px;
 }
 
 .checkbox-wrapper {
@@ -207,22 +223,22 @@ input[type="checkbox"] {
 
 .product-info {
   background-color: var(--gray-50);
-  /* padding: 24px 20px; */
+  padding: 24px 0;
   border-radius: 8px;
-  min-width: 304px;
+  width: 304px;
+  height: 420px;
 }
 
 .product-info-top {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding: 24px 20px 0 20px;
+  padding: 0 20px;
 }
 
 .procuct-info-code {
   color: var(--black-primary);
-  font-family: SF-pro-semibold, sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 12px;
 }
 
@@ -231,15 +247,16 @@ input[type="checkbox"] {
 }
 
 .btn-request {
-  color: white;
-  text-transform: uppercase;
-  background-color: var(--black-primary);
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 10px;
-  border-radius: 7px;
+  color: white;
+  background-color: var(--black-primary);
+  text-transform: uppercase;
+  border-radius: 4px;
   max-width: 126px;
   padding: 10px 0;
+  height: 32px;
 }
 
 .btn-request img {
@@ -251,9 +268,10 @@ input[type="checkbox"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 9px 11px;
+  padding: 8px 12px;
   background-color: var(--red-orange);
   border-radius: 4px;
+  height: 32px;
 }
 .product-info-rate-group {
   display: flex;
@@ -271,18 +289,19 @@ input[type="checkbox"] {
 .btn-read-more {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
   height: 14px;
 }
 
 .btn-read-more > span {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  font-size: 14px;
   text-transform: uppercase;
   color: var(--black-primary);
 }
 .btn-read-more > img {
-  width: 8px;
+  width: 7px;
 }
 .devider {
   background-color: var(--gray-200);
@@ -295,26 +314,29 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding: 0 20px 24px 20px;
+  padding: 0  20px;
 }
 
 .product-info-price {
-  font-family: SF-pro-regular, sans-serif;
   font-weight: 700;
-  color: var(--dark-azure);
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 24px;
+  color: var(--dark-azure);
+  height: 24px;
 }
 
 .product-info-price > span {
+  font-size: 10px;
+}
+
+.product-info-price > span:first-child {
   color: var(--gray-600);
-  text-transform: uppercase;
-  font-size: 8px;
 }
 
 .product-quantity {
   display: flex;
   gap: 16px;
+  height: 44px;
 }
 
 .product-quantity > button {
@@ -335,7 +357,6 @@ input[type="checkbox"] {
 }
 
 .quantity {
-  font-family: SF-pro-regular, sans-serif;
   font-size: 16px;
   font-weight: 400;
   text-align: center;
@@ -360,11 +381,13 @@ input[type="checkbox"] {
   width: 100%;
   padding: 14px 0;
   border-radius: 8px;
+  height: 44px;
 }
 
 .product-warning {
   color: var(--gray-600);
-  font-family: SF-pro-regular, sans-serif;
   font-size: 12px;
   line-height: 120%;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
