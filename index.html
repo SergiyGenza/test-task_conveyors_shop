@@ -31,14 +31,69 @@
   <main>
     <div class="container wrapper">
       <div class="products-slider">
+        <div id="img-viewer">
+          <span class="close" onclick="close_model()">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.5 14.6667V10.5M10.5 10.5H14.6667M10.5 10.5L15.5 15.5M10.5 1.33333V5.5M10.5 5.5H14.6667M10.5 5.5L15.5 0.5M5.5 14.6667V10.5M5.5 10.5H1.33333M5.5 10.5L0.5 15.5M5.5 1.33333V5.5M5.5 5.5H1.33333M5.5 5.5L0.5 0.5"
+                stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+          <img class="modal-content" id="full-image">
+        </div>
         <div class="preview-lg">
-          <img src="assets/Conveyor 3d-Temp0025.png" alt="">
+          <img src="" alt="" id="preview">
+          <div class="preview-btn-group">
+            <button class="btn-slide prev">
+              <img src="assets/icons/Chevron_left.svg" alt="arrow right" id="prev">
+            </button>
+            <button class="btn-slide next rotate">
+              <img src="assets/icons/Chevron_left.svg" alt="arrow right" id="next">
+            </button>
+          </div>
+          <span>Picture shows conveyor with optional structures amd features</span>
+          <button class="btn-slider-full" id="full" onclick="full_view();">
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="44" height="44" rx="8" fill="#F2F5F5" />
+              <path d="M29.5 24.5V29.5M29.5 29.5H24.5M29.5 29.5L24.8125 24.8125" stroke="black" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M14.5 24.5V29.5M14.5 29.5H19.5M14.5 29.5L19.1875 24.8125" stroke="black" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M29.5 19.5V14.5M29.5 14.5H24.5M29.5 14.5L24.8125 19.1875" stroke="black" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M14.5 19.5V14.5M14.5 14.5H19.5M14.5 14.5L19.1875 19.1875" stroke="black" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="slider-group" id="slider-group">
+          <button class="btn-slide prev" id="prev">
+            <img src="assets/icons/Chevron_left.svg" alt="arrow right">
+          </button>
+          <div class="slider-item">
+            <img src="assets/conveyor-01.png" alt="" id="0">
+          </div>
+          <div class="slider-item">
+            <img src="assets/conveyor-02.png" alt="" id="1">
+          </div>
+          <div class="slider-item">
+            <img src="assets/conveyor-03.png" alt="" id="2">
+          </div>
+          <div class="slider-item">
+            <img src="assets/conveyor-04.png" alt="" id="3">
+          </div>
+          <div class="slider-item">
+            <img src="assets/conveyor-05.png" alt="" id="4">
+          </div>
+          <button class="btn-slide next rotate" id="next">
+            <img src="assets/icons/Chevron_left.svg" alt="arrow right">
+          </button>
         </div>
       </div>
 
       <div class="product-details">
         <div class="product-details-title">
-          Incline & Decline Conveyors
+          <h2>Incline & Decline Conveyors</h2>
         </div>
         <div class="product-wrapper">
           <div class="product-content">
@@ -169,6 +224,7 @@
       </div>
     </div>
   </main>
+  <script src="index.js"></script>
 </body>
 
 </html>
