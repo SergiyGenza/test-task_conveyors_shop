@@ -30,6 +30,9 @@
   </header>
   <main>
     <div class="container wrapper">
+      <div class="product-details-title">
+        <h2>Incline & Decline Conveyors</h2>
+      </div>
       <div class="products-slider">
         <div id="img-viewer">
           <span class="close" onclick="closeModal()">
@@ -90,7 +93,6 @@
           </button>
         </div>
       </div>
-
       <div class="product-details">
         <div class="product-details-title">
           <h2>Incline & Decline Conveyors</h2>
@@ -112,16 +114,16 @@
                 <button class="btn-option">48”</button>
                 <button class="btn-option">54”</button>
                 <button class="btn-option custom" onclick="onCustomSizeOpen()">Custom</button>
-                <div class="custom-size" id="product-width" id="custom-size">
-                  <button class="btn-custom-size prev">
-                    <img src="assets/icons/Chevron_left.svg" alt="arrow left">
-                  </button>
-                  <span class="custom-size-value">10”</span>
-                  <button class="btn-custom-size next rotate">
-                    <img src="assets/icons/Chevron_left.svg" alt="arrow right">
-                  </button>
-                </div>
               </div>
+            </div>
+            <div class="custom-size" id="product-width" id="custom-size">
+              <button class="btn-custom-size prev">
+                <img src="assets/icons/Chevron_left.svg" alt="arrow left">
+              </button>
+              <span class="custom-size-value">1”</span>
+              <button class="btn-custom-size next rotate">
+                <img src="assets/icons/Chevron_left.svg" alt="arrow right">
+              </button>
             </div>
             <div class="product-length">
               <div class="product-title">
@@ -157,7 +159,7 @@
               </div>
               <div class="product-option-item">
                 <div class="checkbox-wrapper">
-                  <input type="checkbox" id="braces">
+                  <input type="checkbox" name="braces" id="braces">
                   <label for="braces"></label>
                   Knee Braces
                 </div>
@@ -165,36 +167,48 @@
               </div>
               <div class="product-option-item">
                 <div class="checkbox-wrapper">
-                  <input type="checkbox" id="enhanced">
+                  <input type="checkbox" name="enhanced" id="enhanced">
                   <label for="enhanced"></label>
                   Enhanced support
                 </div>
                 <button class="btn-info"></button>
               </div>
             </div>
+            <div class="product-options-group-mobile">
+              <div class="custom-select">
+                Select options
+                <div class="rotare90">
+                  <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.75 0.75L5.29289 5.29289C5.68342 5.68342 5.68342 6.31658 5.29289 6.70711L0.75 11.25"
+                      stroke="#042A30" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
-
           <div class="product-info">
             <div class="product-info-top">
               <div class="procuct-info-code">
                 <span>SKU:</span> WMD-2446F-GRYI
               </div>
-              <button class="btn-request"><img src="assets/icons/check.svg" alt="check">Upon request</button>
-              <div class="product-info-rate-block">
-                <div class="product-info-rate-group">
-                  <img src="assets/icons/star.svg" alt="rate">
-                  <img src="assets/icons/star.svg" alt="rate">
-                  <img src="assets/icons/star.svg" alt="rate">
-                  <img src="assets/icons/star.svg" alt="rate">
-                  <img src="assets/icons/star.svg" alt="rate">
-                  <span class="product-info-rate-comments">(20)</span>
+              <div class="procuct-info-block">
+                <button class="btn-request"><img src="assets/icons/check.svg" alt="check">Upon request</button>
+                <div class="product-info-rate-block">
+                  <div class="product-info-rate-group">
+                    <img src="assets/icons/star.svg" alt="rate">
+                    <img src="assets/icons/star.svg" alt="rate">
+                    <img src="assets/icons/star.svg" alt="rate">
+                    <img src="assets/icons/star.svg" alt="rate">
+                    <img src="assets/icons/star.svg" alt="rate">
+                    <span class="product-info-rate-comments">(20)</span>
+                  </div>
+                  <a href="">
+                    <button class="btn-read-more">
+                      <span>read</span>
+                      <img class="" src="assets/icons/arrow.svg" alt="arrow">
+                    </button>
+                  </a>
                 </div>
-                <a href="">
-                  <button class="btn-read-more">
-                    <span>read</span>
-                    <img class="" src="assets/icons/arrow.svg" alt="arrow">
-                  </button>
-                </a>
               </div>
             </div>
             <div class="devider"></div>

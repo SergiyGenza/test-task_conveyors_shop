@@ -11,6 +11,7 @@ const prevButtons = document.querySelectorAll(".btn-slide.prev");
 const nextButtons = document.querySelectorAll(".btn-slide.next");
 const slider = document.querySelectorAll(".slider-item img");
 const options = document.querySelectorAll(".options-group");
+const sliderList = document.querySelectorAll(".slider-group .slider-item img");
 let currentIndex = 0;
 
 // slider
@@ -27,6 +28,13 @@ function setActiveSlide() {
     }
   });
 }
+
+sliderList.forEach((slide) => {
+  slide.addEventListener("click", function () {
+    currentIndex = slide.id;
+    showSlide(currentIndex);
+  });
+});
 
 prevButtons.forEach((prevButton) => {
   prevButton.addEventListener("click", () => {
@@ -77,8 +85,6 @@ function onCustomSizeOpen() {
   customSize.classList.toggle("open");
 }
 
-showSlide(currentIndex);
-
 // custom checkboxes
 var checkboxes = document.querySelectorAll(
   '.product-options-group input[type="checkbox"]'
@@ -93,3 +99,5 @@ checkboxes.forEach(function (checkbox) {
     }
   });
 });
+
+showSlide(currentIndex);
