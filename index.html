@@ -32,7 +32,7 @@
     <div class="container wrapper">
       <div class="products-slider">
         <div id="img-viewer">
-          <span class="close" onclick="close_model()">
+          <span class="close" onclick="closeModal()">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M10.5 14.6667V10.5M10.5 10.5H14.6667M10.5 10.5L15.5 15.5M10.5 1.33333V5.5M10.5 5.5H14.6667M10.5 5.5L15.5 0.5M5.5 14.6667V10.5M5.5 10.5H1.33333M5.5 10.5L0.5 15.5M5.5 1.33333V5.5M5.5 5.5H1.33333M5.5 5.5L0.5 0.5"
@@ -111,8 +111,8 @@
                 <button class="btn-option">42”</button>
                 <button class="btn-option">48”</button>
                 <button class="btn-option">54”</button>
-                <button class="btn-option custom btn-option-active">Custom</button>
-                <div class="custom-size" id="product-width">
+                <button class="btn-option custom" onclick="onCustomSizeOpen()">Custom</button>
+                <div class="custom-size" id="product-width" id="custom-size">
                   <button class="btn-custom-size prev">
                     <img src="assets/icons/Chevron_left.svg" alt="arrow left">
                   </button>
@@ -128,7 +128,7 @@
                 Bed Section Length, in
                 <button class="btn-info"></button>
               </div>
-              <div class="custom-size" id="product-width">
+              <div class="custom-size" id="product-length">
                 <button class="btn-custom-size prev">
                   <img src="assets/icons/Chevron_left.svg" alt="arrow left">
                 </button>
@@ -141,29 +141,33 @@
             <div class="product-options-group">
               <div class="product-option-item">
                 <div class="checkbox-wrapper">
-                  <input type="checkbox" name="feeder">
-                  <label for="">Chain Driven Feeder</label>
+                  <input type="checkbox" name="feeder" id="feeder">
+                  <label for="feeder"></label>
+                  Chain Driven Feeder
                 </div>
                 <button class="btn-info"></button>
               </div>
               <div class="product-option-item">
                 <div class="checkbox-wrapper">
-                  <input type="checkbox" name>
-                  <label for="">Additional Support Structures</label>
+                  <input type="checkbox" name="support" id="support">
+                  <label for="support"></label>
+                  Additional Support Structures
                 </div>
                 <button class="btn-info"></button>
               </div>
               <div class="product-option-item">
                 <div class="checkbox-wrapper">
-                  <input type="checkbox">
-                  <label for="">Knee Braces</label>
+                  <input type="checkbox" id="braces">
+                  <label for="braces"></label>
+                  Knee Braces
                 </div>
                 <button class="btn-info"></button>
               </div>
               <div class="product-option-item">
                 <div class="checkbox-wrapper">
-                  <input type="checkbox"><label for="">Enhanced support
-                  </label>
+                  <input type="checkbox" id="enhanced">
+                  <label for="enhanced"></label>
+                  Enhanced support
                 </div>
                 <button class="btn-info"></button>
               </div>
